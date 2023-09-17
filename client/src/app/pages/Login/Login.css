@@ -1,0 +1,33 @@
+:root {
+    --black: #0A0908;
+    --darkGreen: #22333B;
+    --white:#F2F4F3;
+    --lightBrown:#C6B7A9;
+    --DarkBrown: #937c62;
+}
+
+.containers{
+    display:flex;
+    margin-left: 35vh;
+    flex-direction: row;
+    align-items: center; 
+
+}
+
+.tagName{
+    /* para mover hacia abajo*/
+    margin-top: 200px;
+    margin-left: 3vh;
+    color: var(--black);
+    display:flex;
+    justify-content: center;
+
+}
+
+.SubButton{
+    color: var(--black);
+    background-color: var(--lightBrown);
+    border-radius: 20px;
+    margin-top: 5vh;
+    margin-left: 35vh;
+}

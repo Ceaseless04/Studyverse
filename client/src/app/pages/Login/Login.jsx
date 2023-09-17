@@ -9,7 +9,7 @@ export function Login() {
             <h1>Login page</h1>
 
             <div className="container">
-                <label> Email </label> <br/>
+                <label className="tag"> Email <br /> </label> 
                 <input type="email" class="email" placeholder="jkRowl@gmail.com" required/> 
                         
             </div>
