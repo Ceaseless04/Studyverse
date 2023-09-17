@@ -1,10 +1,13 @@
-import "./Signup.css";
+import "./Login.css";
 // when you are doing import of components (navbar, etc) follow this format 
 // import Function from "../../components/function";
+import {Login} from "./Login"
 
 
-export function Signup() {
+export default function LoginJs() {
     return (
-        <h1>Signup page</h1>
+        <>
+          <Login />  
+        </>
     );
 }
