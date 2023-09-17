@@ -6,8 +6,9 @@ import "./home.css";
 function Home() {
     return (
         <div className="home-page">
-
-            <p>This is like HTML</p>
+            <h2 id = "welcome">Welcome to</h2>
+            <h1 id="title">STUDY VERSE</h1>
+            <h2 id = "welcome">Your personalized oasis :)</h2>
 
         </div>
     );
