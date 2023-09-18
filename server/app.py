@@ -21,6 +21,7 @@ app.db = client.form
 
 mongo = PyMongo(app)
 
+# creates colleciton with results array making it an array of object with key->values
 @app.route("/")
 def index():
     collection = app.db.user_collection
