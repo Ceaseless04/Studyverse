@@ -1,5 +1,11 @@
-export default function hello() {
+
+import { Login } from "./Login";
+
+export default function Hi() {
     return (
-        <h1>Hellow</h1>
-    )
+        <>
+        <h1>Doing stuff</h1>
+        <Login />
+        </>
+    );
 }
