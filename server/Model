@@ -3,15 +3,17 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-# dataset = pd.read_json("jsonfile.json")
+
+""" ML Overview:
+We are currently using Random forest but will think of transitioning to Neural Networks.
+Random forest technique: works well for clasification.
+
+Steps:
+    1- build new datasets form given dataset
+    2- use decision trees on each dataset (really important to use random features)
+    3- each undependent decicion tree will be takem intp consideration and teh final result will the the most frequent value (1 or 0)
 
 
-# Dummy Data
+CODE PIECES:
 
-
-x_train, x_test, y_train, y_test = dftrain(dftrain.drop('survived'), dftrain['survived'],test_size=0.8)
-
-#number of trees you will be using to train model. tune!!
-model = RandomForestClassifier(n_estimators=10)
-model.fit(x_train, y_train) # training the model
-model.score(x_test, y_test) 
+"""
