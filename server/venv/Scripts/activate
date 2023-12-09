@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\krist\Downloads\coding\ShellHacks_2023\Studyverse\server\venv"
+VIRTUAL_ENV="C:\Users\krist\Downloads\Studyverse\Studyverse\server\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

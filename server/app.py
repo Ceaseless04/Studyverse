@@ -20,15 +20,16 @@ client = MongoClient(os.getenv('MONGO_URI'))
 app.db = client.form
 
 mongo = PyMongo(app)
+collection = app.db.user_collection
 
+# creates colleciton with results array making it an array of object with key->values
 @app.route("/")
 def index():
-    collection = app.db.user_collection
     data = collection.find()
     result = []
     for item in data:
         name = item.get("name")
-        age =item.get("age")
+        age = item.get("age")
         period = item.get("period")
         env = item.get("env")
         hours = item.get("hours")
@@ -43,6 +44,14 @@ def index():
             "style": style
         })
     return jsonify(result)
+
+def login(user_name, password):
+    data = collection.find()
+
+    
+
+    return True
+
 
 if __name__ == '__main__':
     app.run(debug=True)
